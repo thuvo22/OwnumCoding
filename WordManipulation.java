@@ -55,8 +55,8 @@ public class WordManipulation {
 	/**
 	 * The method checks if the first string contains the second string.
 	 * @param s1  The first string
-	 * @param s2 The second string 
-	 * @return
+	 * @param s2  The second string 
+	 * @return    If the s1 sentence contains the s2 word.
 	 */
 	public static boolean isContain(String s1, String s2) {
 		String pattern = "\\b" + s2 + "\\b";
@@ -67,8 +67,8 @@ public class WordManipulation {
 
 	/**
 	 * The method is used to find the last sentence contains the most frequent words
-	 * @param validSentence
-	 * @param topTen
+	 * @param validSentence The array list of valid sentences.
+	 * @param topTen	The array list of top 10 most frequent words.
 	 */
 	public static void findLastSentenceContainsMostUsedWord(ArrayList<String> validSentence, ArrayList<String> topTen) {
 		int cnt = 0;
@@ -93,7 +93,7 @@ public class WordManipulation {
 
 	/**
 	 * The method finds the total words in the file.
-	 * @param str the string that was converted from the file.
+	 * @param str The string that was converted from the file.
 	 */
 	public static void findTotalWords(String str) {
 		String[] sentences = str.split("\\.");
@@ -113,8 +113,8 @@ public class WordManipulation {
 	/**
 	 * The method used to process the string
 	 * and remove unnecessary punctuation.
-	 * @param s words.
-	 * @return  processed word.
+	 * @param s Words.
+	 * @return  Processed word.
 	 */
 	public static String removeLastChar(String s) {
 		s = s.toLowerCase();
